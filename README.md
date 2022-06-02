@@ -6,7 +6,11 @@ Example.  You may need to install Docker, WSL or  git-bash to run the example.
 1. Clone/fork this repo and into  a new repo of your own with the contents.
 2. Run the instructions in the Setup section to build the framework.
 3. Complete the user stories below using PHP and MySQL in the development process.
-4. Email us a pointer to your project repo with the subject **"Frametest Interview Repo"**.
+4. Check your work into **YOUR** github repo area and email us a pointer to your project 
+   repo with the subject **"Frametest Interview Repo"**.
+   
+   Note:  This is important, we lock down the interview test to be read-only so PRs
+   don't get seen by other potential candidates.  
 
 
 ## Setup
@@ -43,6 +47,7 @@ Your code should:
 - Set the post request data on the ExampleModel object
 - Create the new Model record
 - Pass only the ExampleModel object to the view
+- Verify that it works with a test
 
 
 ### Convert ExampleView::get() 
@@ -51,6 +56,7 @@ Your code should:
 - Take in the ExampleModel object as a parameter
 - Verify the ExampleModel object is initialized with data
 - Pass the ExampleModel object/data to the view
+- Verify that it works with a test
 
 
 ### Optional Assignment
