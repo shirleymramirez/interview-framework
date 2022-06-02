@@ -226,6 +226,8 @@ EOF
         fi
 
         test-docker-compose up -d 2>&1 | sed -e "s/^/# /"
+        
+        sleep 5
 
         echo -e "\n> Running Web Test Suite"
         test-docker-compose-run web ./vendor/phpunit/phpunit/phpunit --testdox --do-not-cache-result --testsuite Unit,Integration,Functional
