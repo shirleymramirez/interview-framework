@@ -16,7 +16,7 @@ services:
             APP_ENVIRONMENT: ${ENV}
             APP_TZ: America/Phoenix
             DATA_PATH: /opt/apptmp/
-            DB_HOST: ${APP}${ENV}_mysql_1
+            DB_HOST: mysql
             DB_SCHEMA: ${DB_SCHEMA}
             DB_PORT: 3306
             DB_CHARSET: utf8
