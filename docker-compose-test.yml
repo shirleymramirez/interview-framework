@@ -17,14 +17,14 @@ services:
             APP_ENVIRONMENT: ${ENV}
             APP_TZ: America/Los_Angeles
             DATA_PATH: /opt/apptmp/
-            DB_HOST: ${APP}${ENV}test_mysql_1
+            DB_HOST: mysql
             DB_SCHEMA: ${DB_SCHEMA}
             DB_PORT: 3306
             DB_CHARSET: utf8mb4
             DB_USER: example_admin
             DB_PASS: YEGQQy8IhCXrUFzqU7hmHrVTSnaDWRTL
             MASTER_TOKEN: bTCd7CtU914D/7uzobyk1GmbzlgN6Z7e
-            TEST_URL: "http://${APP}${ENV}test_web-nginx_1"
+            TEST_URL: "http://web-nginx"
 
     web-nginx:
         build:
