@@ -135,7 +135,7 @@ EOF
         ;;
     composer)
         # Usage: ./haz composer update --ignore-platform-reqs
-        docker run --rm --interactive --volume "$(real-pwd)/web/code":/app composer:1.8 "${SUBCOMMAND_ARGS[@]}"
+        docker run --rm --interactive --volume "$(real-pwd)/web/code":/app composer:2 "${SUBCOMMAND_ARGS[@]}"
         ;;  
     clean)
         # Careful when running this command. It will only remove generated
