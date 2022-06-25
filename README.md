@@ -1,11 +1,11 @@
-# Framtest Interview Test
+# Interview Test
 
 This interview framework includes a Docker containerized PHP & MySQL application called
 Example.  You may need to install Docker, WSL2 or git-bash (Windows) to run the example.
 
 1. Clone/fork this repo and into  a new repo of your own with the contents.
 2. Run the instructions in the Setup section to build the framework.
-3. Complete the user stories below using PHP and MySQL in the development process.
+3. Complete the user stories below using this provided framework.
 4. Check your work into **YOUR** github repo area and email us a pointer to your project 
    repo with the subject **"Frametest Interview Repo"**.
    
