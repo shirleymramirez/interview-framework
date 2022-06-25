@@ -125,7 +125,7 @@ EOF
             PROJ="${PROJECT}"
         fi
 
-        CONTAINER_NAME="${PROJ}_${SERVICE_NAME}_1"
+        CONTAINER_NAME="${PROJ}-${SERVICE_NAME}-1"
 
         if [ $WINPTY = 1 ]; then
             winpty docker exec -it $CONTAINER_NAME //bin/bash
