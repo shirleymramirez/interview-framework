@@ -14,7 +14,24 @@
 			<button type="submit" class="btn btn-primary">Create Example</button>
 		</form>
 
+		<hr class="my-5"/>
+
+		<form id="add-form">
+			<div class="form-group">
+				<label for="first-number">First Number</label>
+				<input type="number" id="first-number" class="form-control" name="firstnumber" placeholder="First Number">
+			</div>
+
+			<div class="form-group">
+				<label for="second-number">Second Number</label>
+				<input type="number" id="second-number" class="form-control" name="secondnumber" placeholder="Second Number">
+			</div>
+			<button type="submit" class="btn btn-primary">Add</button>
+		</form>
+
 		<div id="example-view"></div>
+
+		<div id="add-view"></div>
 
 		<script>
 			document.querySelector('#example-form').onsubmit = function(e) {
@@ -31,6 +48,23 @@
 				}
 
 				sendPost('example/create', data, view => document.querySelector('#example-view').innerHTML = view);
+			};
+	</script>
+	<script>
+			document.querySelector('#add-form').onsubmit = function(e) {
+				e.preventDefault();
+
+				const data = new FormData(e.target);
+
+				// Ensure every input has a value
+				for (var [key, value] of data.entries()) { 
+					if (!value) {
+						document.querySelector('#add-form input[name="' + key + '"]').focus();
+						return;
+					}
+				}
+
+				sendPost('example/sum', data, view => document.querySelector('#add-view').innerHTML = view);
 			};
 		</script>
 	</div>
